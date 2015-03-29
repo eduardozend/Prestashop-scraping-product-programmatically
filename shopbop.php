@@ -1,11 +1,15 @@
 <?php
-// http://simplehtmldom.sourceforge.net/manual_api.htm
-// http://www.canbike.org/information-technology/php-fatal-error-call-to-a-member-function-find-on-a-non-object.html
-// ini_set("memory_limit","32M");
-// memory_limit=512M
-// http://mypresta.eu/en/art/developer/new-field-product-backoffice.html
-// http://strife.pl/2011/12/how-to-add-new-custom-field-in-prestashop/
-//import library scraping
+/*
+ *Prestashop-scraping-product-programmatically
+ *author: Eduardo Soliz Valdez
+ *version prestashop:1.6
+ *description: Scraping product shopbop to prestashop
+ *More information for scraping:http://simplehtmldom.sourceforge.net/manual_api.htm
+ *possible errors http://www.canbike.org/information-technology/php-fatal-error-call-to-a-member-function-find-on-a-non-object.html
+ *limitations server configure ini_set("memory_limit","512M");
+ links:http://mypresta.eu/en/art/developer/new-field-product-backoffice.html,http://strife.pl/2011/12/how-to-add-new-custom-field-in-prestashop/
+*/
+
 //ALTER TABLE `ps_product` ADD `brandname` VARCHAR(120) ALTER TABLE `ps_product` ADD `imageproduc` TEXT ALTER TABLE `ps_product` ADD `sizefit` TEXT
 include('simple_html_dom.php');
 //import funtions prestashop
